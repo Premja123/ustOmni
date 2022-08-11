@@ -522,34 +522,6 @@ font-family:"Roboto", sans-serif;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:1020px){
    
 a{
@@ -624,25 +596,24 @@ header{
  height:3rem;
 }
  
-/* .ust_omni{
-    padding:1rem;
-} */
-
-/*.profile{
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-    padding: 1.3rem;
-}
-.login{
-    display:flex;
-    align-items: center;
+.mob:focus{
+    /*border-bottom:0.2rem solid #0097ab;*/
+    background-color: #0097ab;
 }
 
-.login p{
-    padding-right:0.2rem;
+.login a:hover{
+    color:#0097ab;
+  }
+
+
+.flex_container .linkings a:focus{
+    border-bottom:0.2rem solid #0097ab;
 }
-*/
+
+.flex_container2 a:focus {
+    background-color:#0097AB;
+  }
+
 
 .container2{
    display:flex;
@@ -747,12 +718,7 @@ header{
         justify-content:space-between;
     }
     
-    .flex_container .linkings a:hover{
-        border-bottom:0.2rem solid #0097ab;
-    }
-    .linkings a:hover{
-        border-bottom:0.2rem solid #0097ab;
-    }
+
     .flex_container2 ul{
         display:flex;
         flex-wrap: wrap;
@@ -772,9 +738,7 @@ header{
     .flex_container2 li{
         border-color: white;
     }
-    /*.flex_container2 li:hover{
-        background-color:#0097AB;
-    }*/
+ 
     .flex_container2 li{
        /*background-color: #f8f9fb;*/
        /* padding:0.5rem;*/
