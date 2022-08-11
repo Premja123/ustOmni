@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
 }
+
 body{
    background-color:#f2f4f8;
    font-family:"Roboto", sans-serif;
@@ -44,13 +45,14 @@ header{
     justify-content:space-between;
 }
 .ust_omni{
-    width: 20%;
+    width: 15%;
     padding: 1.5rem;
    
 }
 .navigation_block{
     display: flex;
     justify-content: center;
+    color: #2f3749;
 }
 .navigation_block img{
     padding-right:0.5rem;
@@ -58,30 +60,40 @@ header{
 .nav_block{
     display:flex;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.3rem;
     border-left: 0.1rem solid#f2f4f8;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+   /* padding-right: 0.5rem;
+    padding-left: 0.5rem;*/
+   /* padding:1.4rem;*/
+   
 }
 .nav_block1{
     display:flex;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.3rem;
     border-left: 0.1rem solid#f2f4f8;
     border-right: 0.1rem solid#f2f4f8;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    /*padding-right: 0.5rem;
+    padding-left: 0.5rem;*/
+    color: #2f3749;
 }
 
-.navigation_block a:hover{
-    border-bottom:0.1rem solid darkcyan;
+.navigation_block a:focus{
+    border-bottom:0.2rem solid #0097ab;
 }
+/*.navigation_block a:link{
+    color:yellow;
+}
+.navigation_block a:visited{
+    color:red;
+}*/
 
 .profile{
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    width: 14%;
     padding: 1.3rem;
+    color: #2f3749;
 }
 .login{
     display:flex;
@@ -89,11 +101,11 @@ header{
 }
 
 .login p{
-    padding-right:0.2rem;
+    padding-right:0.4rem;
 }
 
 .login a:hover{
-    color:red;
+    color:#0097ab;
   }
 .container2{
     display: grid;
@@ -111,8 +123,14 @@ header{
     justify-content:space-between;
     background-color:white;
     text-decoration:bold;
-    color:grey;
-    font-size: 0.825rem;
+    color: #666;
+    font-size: 0.875rem;
+}
+.exclamatory_icon{
+    display: flex;
+}
+.exclamatory_icon img{
+    padding-left:0.3rem;
 }
 .last_grid_box{
     padding:1rem;
@@ -120,7 +138,7 @@ header{
     justify-content:space-between;
     background-color:white;
     text-decoration:bold;
-    color:grey;
+    color:#666;
 }
 .last_grid_box p{
     font-size:0.825rem;
@@ -134,13 +152,13 @@ header{
 .color_circles{
     display:flex;
     gap:1rem;
-    color:grey;
+    color:#666;
     font-size:0.8rem;
 }
 .numbers{
-    font-size:1.5rem;
+    font-size:1.875rem;
     font-weight: bolder;
-    color:black
+    color:black;
 }
 .circle{
     display: inline-block;
@@ -176,33 +194,46 @@ header{
     margin-right:1rem;
     width: 98.5%;
     background-color:white; 
-    border:none;
+   /* border:none;*/
     flex-wrap: wrap;
 }
-
-
-     .linkings{
-        padding:0.5rem;
+ .linkings{
+        padding:1rem;
         display:flex;
-        margin: 0.5rem;
+      /*  margin: 0.5rem;*/
      }
      .linkings a{
-        padding:0.8rem;
+        padding:1rem;
      }
 .flex_container{
     display:flex;
-    border:none;
-    color:darkcyan;
+   /* border:none;*/
     align-items:center;
     flex-wrap: wrap;
     justify-content:space-between;
 }
 
-.flex_container .linkings a:hover{
-    border-bottom:0.2rem solid darkcyan;
+.flex_container .linkings a:focus{
+    border-bottom:0.2rem solid #0097ab;
 }
-.linkings a:hover{
-    border-bottom:0.2rem solid darkcyan;
+/*.flex_container .linkings a:visited {
+    color: green;
+  }*/
+.nextarrow img{
+  /*  position:relative;*/
+    padding-right:1rem;
+    padding-top:0.1rem;
+ }
+.nextarrow a{
+   color:#0097ab;
+   /*padding-right:0.2rem;*/
+   padding-left:0.2rem;
+   padding-top:1rem;
+   padding-bottom:1rem;
+}
+
+.view_arrow{
+    display:flex;
 }
 .flex_container2 ul{
     display:flex;
@@ -212,40 +243,52 @@ header{
 }
 .flex_container2{
     border:none;
-    margin-left:0.7rem;
+    margin:0.7rem;
     text-align: center;
     justify-content: start;
     background-color:white;
     display: flex;
     flex-wrap: wrap;
-    font-size:0.825rem;
+    font-size:0.875rem;
 }
-.flex_container2 li{
+/*.flex_container2 li{
     border-color: white;
-}
-.flex_container2 li:hover{
+    margin:0.1rem;
+}*/
+/*.flex_container2 li:hover{
     background-color:#0097AB;
-}
-.flex_container2 li{
-    background-color: #f2f4f8;
+}*/
+.flex_container2 a:focus {
+    background-color:#0097AB;
+  }
+.flex_container2 a{
+   /* background-color: #f2f4f8;*/
+   background-color: #f8f9fb;
+   font-size: 0.875;
     padding:0.5rem;
     margin-right:0.5rem;
 }
 .searchblock{
     display:flex;
    padding-top:0.5rem;
-   /*flex-wrap:wrap;*/
+   flex-wrap:wrap;
    padding-bottom:1rem;
+   background-color: white;
 }
 .search_button{
 border:none;
-box-shadow:#f2f4f8;
-margin-left:1rem;
+/*background-color: white;*/
+/*box-shadow:#f2f4f8;*/
+/*background-color:  #f2f4f8;*/
+background-color: #f8f9fb;
+margin-left:1.2rem;
+padding-right:0.3rem;
 }
 .search_box{
-    width:80%;
+    width:90%;
     height:1.5rem;
-    background-color: #f2f4f8;
+   /*background-color: #f2f4f8;*/
+   background-color: #f8f9fb;
     padding:0.25rem;
      border:none;
 }
@@ -264,7 +307,7 @@ margin-left:1rem;
 .container4{
     overflow-y: scroll;
     width:98.5%;
-    height:23.5rem;
+    height:23rem;
     margin-top: none;
     margin:1rem;
 }
@@ -292,11 +335,12 @@ margin-left:1rem;
     justify-content: space-between;
 }
 .shipment_id{
-    color:grey;
+    color:#666;
+    font-size:0.6875rem;
 }
 .block_number{
     font-weight:bolder;
-    font-size:1.2rem;
+    font-size:1.25rem;
 }
 .second_flex_block{
     display:flex;
@@ -322,11 +366,11 @@ margin-left:1rem;
 }
 .sikkim{
     font-weight:bold;
-    font-size:0.9rem;
+    font-size:0.875rem;
 }
 .seattle{
     font-weight:bold; 
-    font-size:0.9rem;
+    font-size:0.875rem;
 }
 .second_flex_block{
     display:flex;
@@ -344,25 +388,27 @@ margin-left:1rem;
 }
 .icons_block p{
    background-color: #e7f4ff; 
-   padding:0.3rem; 
+   padding:0.45rem; 
    color:#017cee;
-   font-size:0.8rem;
+   font-size:0.625rem;
+   font-weight: bold;
+     gap:0.625rem;
 }
 
 .orgin{
-    color:grey;
-    font-size: 0.8rem;
+    color:#666;
+    font-size:0.6875rem;
 }
 .po{
-    color:grey;
-    font-size:0.7rem;
+    color:#666;
+    font-size:0.6875rem;
 }
 .number2{
-    font-size:0.9rem;
+    font-size:0.875rem;
 }
 .destination{
-    color:grey;
-    font-size: 0.8rem;
+    color:#666;
+  font-size:0.6875rem;
 }
 
  .footer{
@@ -388,7 +434,7 @@ margin-left:1rem;
     display:flex;
     justify-content:space-between;
     color:red;
-    font-size:0.9rem;
+    font-size:0.875rem;
 }
 .linking p{
     padding-left:10.5rem;
@@ -406,30 +452,34 @@ margin-left:1rem;
 .table{
 display:flex;
 flex-direction:column;
-
+padding-right:0.7rem;
 }
 
 .total_table{
 display:flex;
 margin-top:0px;
-justify-content: space-between;
+height:100%;
+/*width:100%;*/
 } 
 .aside_flex{
 display:flex;
 flex-direction: column;
+/*height:30%;*/
+/* width:40%; */
 flex-wrap: wrap;
+/* height:100%; */
 }
 .aside_container{
-/* position:absolute;*/
+/* position:absolute; */
  width:40%;
- height:100%;
+ /*height:100%; */
  /*margin-top:1rem;*/
  background-color:#f8f9fb;
 /* margin-left:60%;*/
-padding-bottom:13.6%;
+/*padding-bottom:13.6%;*/
 margin-right:1rem;
 margin-bottom: 1rem;
-margin-left:0.5rem;
+margin-left:0.7rem;
 font-family:"Roboto", sans-serif;
  } 
 
@@ -439,7 +489,8 @@ font-family:"Roboto", sans-serif;
  justify-content: space-between;
  align-items: center;
  padding:0.5rem;
- font-size: 0.825rem;
+ font-size: 0.8125rem;
+ color: #2f3749;
  font-weight: bold;
 }
 
@@ -454,11 +505,6 @@ font-family:"Roboto", sans-serif;
  text-align:center;
  font-size: 1.5rem;
 }
- .nextarrow{
-     position:relative;
-     padding:1rem;
-  }
-
 
 
 
@@ -551,7 +597,7 @@ li{
     align-items: center;
     /*padding:0.2rem 0rem;*/
     margin:0.3rem;
-    border-bottom: 1px solid darkcyan;
+    border-bottom: 1px solid #0097ab;
 }
 .container{
     display:flex;
@@ -600,7 +646,7 @@ header{
     justify-content:space-between;
     background-color:white;
     text-decoration:bold;
-    color:grey;
+    color:#666;
     font-size: 0.825rem;
 }
 
@@ -610,7 +656,7 @@ header{
     justify-content:space-between;
     background-color:white;
     text-decoration:bold;
-    color:grey;
+    color:#666;
 }
 .last_grid_box p{
     font-size:0.825rem;
@@ -624,11 +670,11 @@ header{
 .color_circles{
     display:flex;
     gap:1rem;
-    color:grey;
+    color:#666;
     font-size:0.8rem;
 }
 .numbers{
-    font-size:1.5rem;
+    font-size:1.875rem;
     font-weight: bolder;
     color:black
 }
@@ -681,17 +727,17 @@ header{
      .flex_container{
         display:flex;
         border:none;
-        color:darkcyan;
+        color:#0097ab;
         align-items:center;
         flex-wrap: wrap;
         justify-content:space-between;
     }
     
     .flex_container .linkings a:hover{
-        border-bottom:0.2rem solid darkcyan;
+        border-bottom:0.2rem solid #0097ab;
     }
     .linkings a:hover{
-        border-bottom:0.2rem solid darkcyan;
+        border-bottom:0.2rem solid #0097ab;
     }
     .flex_container2 ul{
         display:flex;
@@ -790,11 +836,12 @@ header{
         justify-content: space-between;
     }
     .shipment_id{
-        color:grey;
+        color:#666;
+        font-size:0.6875rem;
     }
     .block_number{
         font-weight:bolder;
-        font-size:1.2rem;
+        font-size:1.25rem;
     }
     .second_flex_block{
         display:flex;
@@ -820,11 +867,11 @@ header{
     }
     .sikkim{
         font-weight:bold;
-        font-size:0.9rem;
+        font-size:0.875rem;
     }
     .seattle{
         font-weight:bold; 
-        font-size:0.9rem;
+        font-size:0.875rem;
     }
     .second_flex_block{
         display:flex;
@@ -842,25 +889,27 @@ header{
     }
     .icons_block p{
        background-color: #e7f4ff; 
-       padding:0.3rem; 
-       color:#017cee;
-       font-size:0.8rem;
+       padding:0.45rem; 
+   color:#017cee;
+   font-size:0.625rem;
+   font-weight: bold;
+   gap:0.625rem;
     }
     
     .orgin{
-        color:grey;
+        color:#666;
         font-size: 0.8rem;
     }
     .po{
-        color:grey;
-        font-size:0.7rem;
+        color:#666;
+        font-size:0.875rem;
     }
     .number2{
-        font-size:0.9rem;
+        font-size:0.8125rem;
     }
     .destination{
-        color:grey;
-        font-size: 0.8rem;
+        color:#666;
+        font-size: 0.875rem;
     }
     
      .footer{
@@ -886,7 +935,7 @@ header{
         display:flex;
         justify-content:space-between;
         color:red;
-        font-size:0.9rem;
+        font-size:0.875rem;
     }
     .linking p{
         padding-left:10.5rem;
@@ -920,7 +969,7 @@ header{
          justify-content: space-between;
          align-items: center;
          padding:0.5rem;
-         font-size: 0.825rem;
+         font-size: 0.875rem;
          font-weight: bold;
      }
      
@@ -945,12 +994,5 @@ header{
             margin-top:0px;
             justify-content: space-between;
             } 
-
-
-
-
-
-
-
 
 }
