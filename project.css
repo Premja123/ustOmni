@@ -6,20 +6,25 @@
 body{
    background-color:#f2f4f8;
    font-family:"Roboto", sans-serif;
+   height:100%;
+   width:100%;
 }
 
 .navigation_block_mobile{
     display:none;
 }
 
-.navigation_block{
+/*.navigation_block{
     display:none;
-}
+}*/
 
 #mobile_view label,#mobile{
     display:none;
 }
-
+.container{
+    height:100%;
+    width:100%;
+}
 body{
     background-color:#f2f4f8;
     font-family:"Roboto", sans-serif;
@@ -200,7 +205,7 @@ header{
  .linkings{
         padding:1rem;
         display:flex;
-      /*  margin: 0.5rem;*/
+        /*margin: 0.5rem;*/
      }
      .linkings a{
         padding:1rem;
@@ -238,12 +243,13 @@ header{
 .flex_container2 ul{
     display:flex;
     flex-wrap: wrap;
-    padding: 0.5rem;
+    align-items:center;
+    padding: 0.5rem; 
     background-color:white;
 }
 .flex_container2{
     border:none;
-    margin:0.7rem;
+   /* margin:0.7rem;*/
     text-align: center;
     justify-content: start;
     background-color:white;
@@ -251,10 +257,12 @@ header{
     flex-wrap: wrap;
     font-size:0.875rem;
 }
-/*.flex_container2 li{
-    border-color: white;
-    margin:0.1rem;
-}*/
+.flex_container2 li{
+   margin-top:0.6rem;
+   margin-left:0.1rem;
+   margin-right:0.6rem;
+   margin-bottom: 0.6rem;
+}
 /*.flex_container2 li:hover{
     background-color:#0097AB;
 }*/
@@ -266,7 +274,7 @@ header{
    background-color: #f8f9fb;
    font-size: 0.875;
     padding:0.5rem;
-    margin-right:0.5rem;
+    margin-right:0.2rem;
 }
 .searchblock{
     display:flex;
@@ -304,6 +312,7 @@ padding-right:0.3rem;
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
 .container4{
     overflow-y: scroll;
     width:98.5%;
@@ -541,7 +550,7 @@ font-family:"Roboto", sans-serif;
 
 
 
-@media (max-width:700px){
+@media (max-width:1020px){
    
 a{
     text-decoration: none;
@@ -570,9 +579,9 @@ li{
 #mobile_view label,#mobile{
     display:block;
 }
-/* .navigation_block_mobile{
-    display:block;
-} */
+#navigation_block_mobile{
+    display:none;
+}
 .navigation_block{
     display:none;
 }
@@ -584,10 +593,13 @@ li{
 }
 .navigation_block_mobile{
     background-color: white;
-    margin:1rem;
+   /* margin:1rem;*/
 }
 .navigation_block_mobile li{
     padding: 1rem;
+}
+#mobile{
+    display:none;
 }
 .nav_block_mobile{
     display:flex;
@@ -601,18 +613,17 @@ li{
 }
 .container{
     display:flex;
-    margin-bottom: 20px;
-    background-color: white;
+    height:3rem;
+   /* margin-bottom: 20px;*/
+   /* background-color: white;*/
 }
 header{
     background-color: white;
-    margin-bottom:1rem;
+    border-bottom:1rem solid white;
     width: 100%;
-    /* height:5rem; */
+ height:3rem;
 }
-    #mobile{
-        display: none;
-    }
+ 
 /* .ust_omni{
     padding:1rem;
 } */
@@ -638,7 +649,10 @@ header{
    flex-direction: column;
     position: relative;
     gap:1rem;
-    margin:1rem;
+    margin-top:2rem;
+    margin-bottom:1rem;
+    margin-right:1rem;
+    margin-left:1rem;
 }
 .grid_box{
     display:flex;
@@ -742,12 +756,12 @@ header{
     .flex_container2 ul{
         display:flex;
         flex-wrap: wrap;
-        padding: 0.5rem;
+        /*padding: 0.5rem;*/
         background-color:white;
     }
     .flex_container2{
         border:none;
-        margin-left:0.7rem;
+       margin-left:0.7rem;
         text-align: center;
         justify-content: start;
         background-color:white;
@@ -758,12 +772,12 @@ header{
     .flex_container2 li{
         border-color: white;
     }
-    .flex_container2 li:hover{
+    /*.flex_container2 li:hover{
         background-color:#0097AB;
-    }
+    }*/
     .flex_container2 li{
-        background-color: #f2f4f8;
-        padding:0.5rem;
+       /*background-color: #f8f9fb;*/
+       /* padding:0.5rem;*/
         margin-right:0.5rem;
     }
     .searchblock{
@@ -800,9 +814,8 @@ header{
       .table{
         display:flex;
         flex-direction:column;
-        margin-top:1rem;
-        margin-right:1rem;
-        margin-bottom:1rem;
+        /*margin:1rem;*/
+        padding:0.1px;
      }
 
      .container4{
@@ -956,7 +969,7 @@ header{
         flex-wrap: wrap;
     }
     .aside_container{
-         width:93%;
+         width:95%;
          height:100%;
          margin:1rem;
          background-color: ghostwhite;
@@ -991,8 +1004,9 @@ header{
           .total_table{
             display:flex;
             flex-direction: column;
-            margin-top:0px;
+            margin:1px;
             justify-content: space-between;
             } 
 
 }
+
