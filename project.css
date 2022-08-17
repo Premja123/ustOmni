@@ -306,7 +306,9 @@ header {
 
   margin-right: 0.5rem;
 }
-
+.no_10{
+    color:#f62020;
+}
 .flex_container2 .active li {
   background-color: #0097ab;
   color: white;
@@ -847,7 +849,9 @@ header {
     background-color: #0097ab;
     color: white;
   }
-
+ .no_10{
+    color:#f62020;
+ }
   .searchblock {
     width: 100%;
     display: flex;
@@ -1377,7 +1381,9 @@ header {
     background-color: #0097ab;
     color: white;
   }
-
+  .no_10{
+    color:#f62020;
+}
   .searchblock {
     display: flex;
     /* padding-top:0.5rem; */
