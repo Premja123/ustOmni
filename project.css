@@ -849,6 +849,10 @@ header {
     background-color: #0097ab;
     color: white;
   }
+  .flex_container2_scroll a:focus {
+    background-color: #0097ab;
+    color: white;
+  }
  .no_10{
     color:#f62020;
  }
