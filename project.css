@@ -6,8 +6,6 @@
 body {
   background-color: #f2f4f8;
   font-family: "Roboto", sans-serif;
-  height: 100%;
-  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -23,7 +21,7 @@ body {
   background: #555;
 }
 
-.container2::-webkit-scrollbar {
+.grid_scrolling::-webkit-scrollbar {
   display: none;
 }
 
@@ -44,6 +42,10 @@ body {
 #mobile_view label,
 #mobile {
   display: none;
+}
+
+.third_flex_block_mobile{
+    display: none;
 }
 .container {
   height: 100%;
@@ -127,29 +129,44 @@ header {
   color: #0097ab;
 }
 
-.grid_scrolling {
-  display: flex;
+/*.grid_scrolling {
+   display: flex; 
   column-gap: 0.7rem;
-  width: 175%;
-}
+  width: 150%;
+}*/
 
-.container2 {
-  display: grid;
-  position: relative;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  margin: 0.7rem 1rem;
+/*.container2 {
+  /* display: grid; */
+  /* width:97.8%; */
+  /*position: relative;*/
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* gap: 1rem; */
+  /*width:98%;
+   margin: 0.7rem 1rem; 
   flex-wrap: wrap;
   justify-content: space-between;
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
+}*/
+
+.grid_scrolling{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0.6rem 1rem;
+    /* width:50rem; */
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:1rem;
 }
 
 .grid_box {
   display: flex;
   padding: 1rem;
-  width: 120%;
+  width:332px;  
   justify-content: space-between;
   background-color: white;
   text-decoration: bold;
@@ -167,7 +184,7 @@ header {
 .last_grid_box {
   padding: 1rem;
   display: flex;
-  width: 120%;
+  width: 332px;
   align-items: center;
   justify-content: space-between;
   background-color: white;
@@ -282,7 +299,6 @@ header {
 
 .flex_container2 {
   border: none;
-
   text-align: center;
   justify-content: start;
   background-color: white;
@@ -510,13 +526,14 @@ header {
 .table {
   display: flex;
   flex-direction: column;
-  padding-right: 0.7rem;
+  /* padding-right: 0.7rem; */
+  width:60%; 
 }
 
 .total_table {
   display: flex;
-  margin-top: 0px;
-  height: 100%;
+  /* margin-top: 0px; */
+  /* height: 100%; */
 }
 .aside_flex {
   display: flex;
@@ -555,7 +572,7 @@ header {
   font-size: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (min-width:50px) and (max-width: 700px) {
   a {
     text-decoration: none;
     color: #2f3749;
@@ -662,32 +679,26 @@ header {
     display: none;
   }
 
-  .grid_scrolling {
-    display: flex;
-    column-gap: 1rem;
-    width: 168%;
-    height: 5.5rem;
-  }
-  .container2 {
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 2rem;
-    /*margin:1rem 1rem 1rem 1rem;*/
-    flex-wrap: wrap;
-    margin: 0.7rem 0rem 0rem 0.5rem;
-    justify-content: space-between;
-    width: 95%;
-    white-space: nowrap;
+  .grid_scrolling{
     overflow-x: scroll;
     overflow-y: hidden;
-  }
+    /* margin: 0.6rem 1rem; */
+    /* width:50rem; */
+    margin:0.7rem 0.5rem 0rem 0.5rem;
+    padding: 0%;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:0.5rem;
+}
 
   .grid_box {
     display: flex;
     padding: 1rem;
     justify-content: space-between;
-    width: 100%;
+    width:330px;
     background-color: white;
     color: #666;
     /*font-size: 0.825rem;*/
@@ -699,7 +710,7 @@ header {
     justify-content: space-between;
     background-color: white;
     color: #666;
-    width: 100%;
+    width: 330px;
   }
   .last_grid_box p {
     font-size: 0.825rem;
@@ -755,7 +766,7 @@ header {
   }
 
   .container3 {
-    width: 100%;
+    width: 167%;
     background-color: white;
     /* border:none;*/
     height: 9rem;
@@ -764,12 +775,12 @@ header {
     flex-wrap: wrap;
   }
   .linkings {
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.3rem;
     display: flex;
   }
-  .linkings a {
-    padding: 0.5rem;
-  }
+   .linkings a {
+    padding: 0.3rem;
+  } 
   .flex_container_mobile {
     display: flex;
     border-bottom: 0.1rem solid #f8f9fb;
@@ -880,7 +891,7 @@ header {
 
   .container4 {
     overflow-y: scroll;
-    width: 100%;
+    width: 167%;
     height: 20rem;
     margin: 1rem 0rem 0rem 0rem;
     padding: 0%;
@@ -965,12 +976,20 @@ header {
     margin-top: 0.5rem;
   }
   .third_flex_block {
+    display: none;
+    /* display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-right: 3rem; */
+    /*padding:1rem;*/
+  }
+
+  .third_flex_block_mobile{
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
     padding-right: 3rem;
-    /*padding:1rem;*/
-  }
+}
   .icon2 {
     padding-right: 0.3rem;
   }
@@ -1212,25 +1231,19 @@ header {
     scrollbar-width: none;
   }
 
-  .grid_scrolling {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*column-gap: 1rem;*/
-    gap: 10px;
-    /* width: 220%;*/
-    height: 10.5rem;
-    width: 100%;
+  .grid_scrolling{
     overflow-x: hidden;
     overflow-y: scroll;
-  }
+    margin: 1rem 1rem;
+    height:11rem;
+    /* width:50rem; */
+}
 
-  .container2 {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    flex-wrap: wrap;
-    white-space: nowrap;
-  }
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:1rem;
+}
 
   .grid_box {
     display: flex;
@@ -1306,7 +1319,7 @@ header {
   }
 
   .container3 {
-    width: 100%;
+    width: 167%;
     margin: 0%;
     background-color: white;
     height: 10rem;
@@ -1411,7 +1424,7 @@ header {
 
   .container4 {
     overflow-y: scroll;
-    width: 100%;
+    width: 167%;
     height: 23rem;
     margin: 1rem 0rem 0rem 0rem;
     /* margin:1rem; */
@@ -1635,5 +1648,44 @@ header {
     padding-top: 3rem;
     text-align: center;
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width:2300px){
+    .parent_container{
+        padding-left:10rem;
+        padding-right: 10rem;
+        /* width: 100%;
+        height: 100%; */
+    }
+  
+    .body{
+        height: 100%;
+        width:100%;
+    }
+    
+.grid_box {
+    display: flex;
+    padding: 1rem;
+    width:auto;  
+ 
+    justify-content: space-between;
+    background-color: white;
+    text-decoration: bold;
+    align-items: center;
+    color: #666;
+    font-size: 0.825rem;
+    font-weight: bold;
+  }
+
+  .last_grid_box {
+    padding: 1rem;
+    display: flex;
+    width:auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    text-decoration: bold;
+    color: #666;
   }
 }
