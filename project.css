@@ -7,7 +7,6 @@ body {
   background-color: #f2f4f8;
   font-family: "Roboto", sans-serif;
 }
-
 ::-webkit-scrollbar {
   width: 0.15rem;
 }
@@ -112,6 +111,16 @@ header {
 /* .navigation_block a{
     border-bottom:0.1rem solid white;
 }  */
+.ex_circle{
+    display: flex;
+    justify-content: flex-start;
+}
+.circle_red{
+    border-radius: 50%;
+    height:6px;
+    width:6px;
+    background-color:#ee2d2d;
+}
 .user_login {
   display: flex;
   justify-content: space-between;
@@ -597,8 +606,8 @@ header {
   #mobile_view label,
   #mobile {
     margin-top: 1rem;
-    padding-top: 0.4rem;
-
+    /* padding-top: 0.4rem; */
+    font-size: 1.5rem;
     display: flex;
   }
   #navigation_block_mobile {
@@ -670,6 +679,16 @@ header {
     justify-content: space-between;
     height: auto;
   }
+  .ex_circle{
+    display: flex;
+    justify-content: flex-start;
+}
+.circle_red{
+    border-radius: 50%;
+    height:6px;
+    width:6px;
+    background-color:#ee2d2d;
+}
   .user_login {
     display: block;
     display: flex;
@@ -1157,7 +1176,8 @@ header {
   #mobile_view label,
   #mobile {
     margin-top: 1rem;
-    padding-top: 0.4rem;
+    /* padding-top: 0.4rem; */
+    font-size: 1.5rem;
 
     display: flex;
   }
@@ -1292,6 +1312,16 @@ header {
     /* padding-top:1rem; */
     height: auto;
   }
+  .ex_circle{
+    display: flex;
+    justify-content: flex-start;
+}
+.circle_red{
+    border-radius: 50%;
+    height:6px;
+    width:6px;
+    background-color:#ee2d2d;
+}
   .user_login {
     display: block;
     display: flex;
