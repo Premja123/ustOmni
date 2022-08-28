@@ -1448,7 +1448,7 @@ position:absolute;
     .menu {
       /* display: flex; */
       position: absolute;
-      transform: translateY(-250%);
+      transform: translateY(-300%);
       transition: transform 0.2s;
       top:5rem;
       left: 0;
