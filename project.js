@@ -184,19 +184,156 @@ menuItems.forEach(
 
 
 
+
+
 function arrows(direction){
   var container = document.getElementById('scrolling_3');
   scrollCompleted = 0;
   var slideVar = setInterval(function(){
+    if(direction==1){
+      document.getElementById("mob_scroll_next").style.display="block";
+    }
       if(direction >= 1){
-          container.scrollLeft += 5;
+          container.scrollLeft += 15;
+
       } if(direction<0) {
-          container.scrollLeft -= 5;
+          container.scrollLeft -= 15;
+          document.getElementById("mob_scroll").style.display="block";
+          document.getElementById("mob_scroll_next").style.display="none";
       }
-      scrollCompleted += 5;
-      if(scrollCompleted >= 100)
+      if(direction==1){
+        document.getElementById("mob_scroll").style.display="none";
+      }
+      scrollCompleted += 2;
+      if(scrollCompleted >= 50)
       {
           window.clearInterval(slideVar);
       }
   }, 17);
 }
+
+
+// function arrows(direction){
+//   var container = document.getElementById('scrolling_3');
+//   scrollCompleted = 0;
+//   var slideVar = setInterval(function(){
+//       if(direction >= 1){
+//           container.scrollLeft += 5;
+//       } if(direction<0) {
+//           container.scrollLeft -= 5;
+//       }
+//       scrollCompleted += 5;
+//       if(scrollCompleted >= 100)
+//       {
+//           window.clearInterval(slideVar);
+//       }
+//   }, 17);
+// }
+
+
+
+// function arrows(direction){
+//   var container = document.getElementById('scrolling_3');
+//   scrollCompleted = 0;
+// var a=  document.getElementById("mob_scroll_next");
+// console.log(a)
+// var b=   document.getElementById("mob_scroll");
+// console.log(b)
+//   var slideVar = setInterval(function(){
+//     if(a!=20){
+//      a.style.display="block";
+// console.log(a.length)
+//          }
+//       if(direction >= 1){
+//           container.scrollLeft += 5;
+//       } if(direction<0) {
+//           container.scrollLeft -= 5;
+//       b.style.display="block";
+//        console.log(b.length);
+//        document.getElementById("mob_scroll_next").style.display="none";
+//       }
+//       if(b==100){
+//            b.style.display="none";
+//            console.log(b)
+//              }
+//       scrollCompleted += 5;
+//       if(scrollCompleted >= 100)
+//       {
+//           window.clearInterval(slideVar);
+//       }
+//   }, 17);
+// }
+
+
+// function myFunction() {
+//   var input, filter, table, tr, td, i, txtValue;
+//   input = document.getElementById("myInput");
+//   filter = input.value.toUpperCase();
+//   table = document.getElementById("myTable");
+//   tr = table.getElementsByTagName("tr");
+//   for (i = 0; i < tr.length; i++) {
+//     td = tr[i].getElementsByTagName("td")[0];
+//     if (td) {
+//       txtValue = td.textContent || td.innerText;
+//       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//         tr[i].style.display = "";
+//       } else {
+//         tr[i].style.display = "none";
+//       }
+//     }       
+//   }
+// }
+
+
+function search_keys() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('block');
+	
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="scrollingblock";				
+		}
+	}
+}
+
+// function search() {
+//   var input = document.getElementById('srch').value;
+
+//   var shipments = document.querySelectorAll(".block");
+
+//   for (let i = 0; i < shipments.length; i++) {
+//       if (shipments[i].id === input) {
+//           shipments[i].style.display = "flex";
+//       } else {
+//           shipments[i].style.display = "none";
+//       }
+//   }
+// }
+
+// function empty() {
+//   var shipments = document.querySelectorAll(".block");
+//   shipments.forEach(element => {
+//       element.style.display = "flex";
+//   });
+// }
+
+// function search_animal() {
+// 	let input = document.getElementById('searchbar').value
+// 	input=input.toLowerCase();
+// 	let x = document.getElementsByClassName('block');
+	
+// 	for (i = 0; i < x.length; i++) {
+// 		if (x[i].innerHTML.toLowerCase().includes(input)) {
+			
+//       x[i].style.display="scrollingblock";		
+// 		}
+// 		else {
+				
+//       x[i].style.display="none";
+// 		}
+// 	}
+// }

@@ -402,7 +402,10 @@ header {
   width: 98.5%;
   height: 23rem;
   margin-top: none;
-  margin: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.7rem;
 }
 
 .scrollingblock {
@@ -410,7 +413,7 @@ header {
   width: 100%;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
-  height: 41rem;
+  height: 20rem;
 }
 
 .firstblock {
@@ -618,7 +621,7 @@ header {
   }
   
     .hamburger {
-      position: fixed;
+      /* position: fixed; */
       z-index: 100;
       /* top: 1rem; */
       right: 0.3rem;
@@ -945,8 +948,9 @@ margin-left:15rem; */
     gap:0.5rem;
 }
   .grid_box_mobile{
-  
     display: block;
+    /* transform: translateX(100px);
+    transition: 5s; */
     display: flex;
     padding: 1rem;
     justify-content: space-between;
@@ -956,6 +960,7 @@ margin-left:15rem; */
     color: #666;
     height:3rem;
   }
+  
   .inside_grid_box p{
     font-size: 0.825rem;
   }
@@ -1044,10 +1049,17 @@ margin-left:15rem; */
     background-color: #36c8ea;
   } */
   .mob_scroll{
-    display:flex;
-    right:20px;
+    display: block;
+  }
+  .mob_scroll_next{
+    display: none;
+  }
+.mob_scroll{
+     /* display:flex; */
+     /* justify-content: flex-end; */
+   right:20px;
     position: absolute;
-    }
+    } 
 .mob_scroll_next{
 left:20px;
 position:absolute;
@@ -1171,8 +1183,10 @@ position:absolute;
   .search_button {
     border: none;
     background-color: #f8f9fb;
-    margin-left: 1.2rem;
+    margin-left: 0.7rem;
     padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    padding-top: 0.2rem;
   }
   .search_box {
     width: 80%;
@@ -1185,7 +1199,7 @@ position:absolute;
   .container4 {
     overflow-y: scroll;
     width: 167%;
-    height: 20rem;
+    height: 17rem;
     margin: 1rem 0rem 0rem 0rem;
     padding: 0%;
   }
@@ -1195,7 +1209,7 @@ position:absolute;
     width: 100%;
     flex-direction: column;
     gap: 0.5rem;
-    height: 43rem;
+    height: 15rem;
   }
 
   .firstblock {
@@ -1434,15 +1448,16 @@ position:absolute;
     .menu {
       /* display: flex; */
       position: absolute;
-      transform: translateY(-150%);
+      transform: translateY(-250%);
       transition: transform 0.2s;
       top:5rem;
       left: 0;
       right: 0;
       bottom: 0;
       z-index: 99;
-     background-color: black;
-     opacity: 0.5;
+      /* background:white ; */
+      /* background-color: black; */
+     /* opacity: 0.5;  */
       color: white;
       list-style: none;
       /* padding-top: 4rem; */
@@ -1452,11 +1467,24 @@ position:absolute;
     .showMenu {
       transform: translateY(0);
     }
-    .nav_screen{
+    /* .nav_screen{
       display: flex;
       background-color: white;
       opacity: none;
-    }
+    } */
+.nav_screen_1{
+  display: flex;
+  background-color: white;
+  border-top: 0.1rem solid #f2f4f8;
+  border-bottom: 0.1rem solid #f2f4f8;
+  height:5rem;
+}
+.nav_screen_2{
+  background-color:black;
+  height:90rem;
+  opacity: 0.5;
+}
+
   .menuIcon{
     font-size: 1.9rem;
     text-decoration:none;
@@ -1543,8 +1571,9 @@ opacity: 0.5;
     opacity: none;
     background-color: white;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1.7rem 1.5rem;
     border-right: 0.1rem solid#f2f4f8;
+    font-size:0.875rem;
     /* border:0.1rem solid #f2f4f8; */
     display: flex;
     /* justify-content: center; */
@@ -1553,9 +1582,10 @@ opacity: 0.5;
   }
   .nav_block1_mobile {
     display: flex;
+    font-size:0.875rem;
     background-color: white;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1.7rem 1.5rem;
     /* border-left: 0.1rem solid#f2f4f8; */
     border-right: 0.1rem solid#f2f4f8;
     color: #2f3749;
@@ -1826,7 +1856,7 @@ opacity: 0.5;
     font-size: 0.875rem;
   }
   .flex_container2 li {
-    padding: 12px 15px;
+    padding: 14px 13px;
   }
   .flex_container2 ul {
     display: flex;
@@ -1876,7 +1906,7 @@ opacity: 0.5;
   .container4 {
     overflow-y: scroll;
     width: 167%;
-    height: 23rem;
+    height: 20rem;
     margin: 1rem 0rem 0rem 0rem;
     /* margin:1rem; */
     /* padding:0.5rem 0rem 0rem 0rem; */
@@ -1889,7 +1919,7 @@ opacity: 0.5;
     padding: 0%;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
-    height: 41rem;
+    height: 20rem;
   }
 
   .firstblock {
@@ -2072,7 +2102,7 @@ opacity: 0.5;
     width: 100%;
 
     background-color: #f8f9fb;
-    margin-top: 1.2rem;
+    margin-top: 0.8rem;
 
     margin-left: 0%;
     font-family: "Roboto", sans-serif;

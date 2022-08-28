@@ -43,13 +43,16 @@
     <li><a class="menuItem" href="#">Contacts</a></li> -->
     <!-- <nav id="navigation_block_mobile" class="navigation_block_mobile">
         <div class="nav_screen"> -->
-            <div class="nav_screen">
+            <!-- <div class="nav_screen"> -->
+                <div class="nav_screen_1">
         <a href="#"><div class="nav_block_mobile active"><div><img src="/assert/Home.png" alt="home"></div><div class="mob">Dashboard</div></div></a>
         <a href="#"><div class="nav_block_mobile"><div><img src="/assert/Shipment_Mgmt.png" alt="shipment_img"></div><div class="mob">Shipment</div></div></a>
         <a href="#"><div class="nav_block_mobile"><div><img src= "/assert/file 1.png" alt="report_img"></div><div class="mob">Reports</div></div></a>
         <a href="#"><div class="nav_block_mobile"><div><img src= "/assert/settings 1.png"  alt="tower_img"></div><div class="mob">Control Tower</div></div></a>
         <a href="#"><div class="nav_block_mobile nav_block1_mobile"><div><img src= "/assert/set.png" alt="setting_img"></div><div class="mob">Action Panel</div></div></a>
-          </div>
+           </div>
+         <div class="nav_screen_2"></div>
+          <!-- </div> -->
           <!-- <div class="nav_screen_2"></div> -->
         <!-- </div>
     </nav> -->
@@ -373,10 +376,10 @@
         <div class="flex_container2_scroll" id="scrolling_3">
             <div class="scrolling_3">
                 <ul>
-                    <div  onclick="arrows(1)" class="mob_scroll">
+                    <div  onclick="arrows(1)" class="mob_scroll" id="mob_scroll">
                         <img src="/assert/Group 36989.png">
                     </div>
-                    <div  onclick="arrows(-1)" class="mob_scroll_next">
+                    <div  onclick="arrows(-1)" class="mob_scroll_next"  id="mob_scroll_next">
                         <img src="/assert/Group 36990.png">
                     </div>
                   
@@ -407,14 +410,20 @@
 
 
         <div class="searchblock">
-            
+            <!-- <span style="cursor: pointer;" class="material-symbols-outlined" >
+                search
+            </span>
+            <input onkeyup="empty()" id="srch" type="text" placeholder="Search by: Shipment ID, Origin, Destination,Product category,vendor">
+             -->
             <button class="search_button">
                 <img src="/assert/Group 33795.png" alt="searching">
             </button>
     
-            <input type="searchbox" class="search_box"
+            <input type="searchbox" class="search_box" id="searchbar" onkeyup="search_keys()" 
                 placeholder="Search by: Shipment ID, Origin, Destination, Product category, Vendor"></input>
-                   
+                <!-- <input id="searchbar" onkeyup="search_animal()" type="text"
+                name="search" placeholder="Search by: Shipment ID, Origin, Destination, Product category, Vendor"> -->
+                
         </div>
     </div>
     <!--</div>-->
@@ -423,7 +432,7 @@
     <div class="container4">
         <div class="scrollingblock">
 
-            <div class="firstblock">
+            <div class="firstblock block" id="block">
 
                <div class="first_flex_block">
                     <div class="shipment">
@@ -503,7 +512,7 @@
         </div>
 
 
-        <div class="secondblock">
+        <div class="secondblock block" id="block">
             
             <div class="first_flex_block">
                 <div class="shipment">
@@ -583,7 +592,7 @@
         </div>
 
 
-        <div class="thirdblock" id="thirdblock">
+        <div class="thirdblock block" id="thirdblock" id="block">
             <div class="first_flex_block">
                 <div class="shipment">
                     <p class="shipment_id">Shipment ID</p>
@@ -672,7 +681,7 @@
         </div>
 
 
-        <div class="forthblock">
+        <div class="forthblock block" id="block">
             <div class="first_flex_block">
                 <div class="shipment">
                     <p class="shipment_id">Shipment ID</p>
