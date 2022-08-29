@@ -157,7 +157,7 @@ function showSlides(n) {
 // });
 
 const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
+// const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
@@ -176,11 +176,26 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu);
 
-menuItems.forEach( 
-  function(menuItem) { 
-    menuItem.addEventListener("click", toggleMenu);
-  }
-)
+// menuItems.forEach( 
+//   function(menuItem) { 
+//     menuItem.addEventListener("click", toggleMenu);
+//   }
+// )
+
+
+
+// function leftScroll() {
+//   const right = document.querySelector(".flex_container2_scroll");
+//   let a=right.scrollBy(-20, 0);
+//   console.log(a)
+  
+// }
+// function rightScroll() {
+//   const left = document.querySelector(".flex_container2_scroll");
+//  var b= left.scrollBy(20, 0);
+//  console.log(b)
+//  document.getElementById("mob_scroll_next").style.display="block";
+// }
 
 
 
@@ -285,7 +300,30 @@ function arrows(direction){
 // }
 
 
+// function bar(){
+//   document.getElementById(searchbar).classList.add('search_style');
+// }
+
+
+
+// function search_keys() {
+// 	let input = document.getElementById('searchbar').value
+// 	input=input.toLowerCase();
+// 	let x = document.getElementsByClassName('block');
+	
+// 	for (i = 0; i < x.length; i++) {
+// 		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+// 			x[i].style.display="none";
+// 		}
+// 		else{
+// 			x[i].style.display="scrollingblock";				
+// 		}
+// 	}
+//   }
+
 function search_keys() {
+  var norows = document.getElementById('no-rows-alert');
+  var matchedRow = false;
 	let input = document.getElementById('searchbar').value
 	input=input.toLowerCase();
 	let x = document.getElementsByClassName('block');
@@ -294,11 +332,51 @@ function search_keys() {
 		if (!x[i].innerHTML.toLowerCase().includes(input)) {
 			x[i].style.display="none";
 		}
-		else {
-			x[i].style.display="scrollingblock";				
+		else{
+			x[i].style.display="flex";	
+      matchedRow = true;			
 		}
 	}
-}
+
+  norows.style.display = matchedRow ? 'none' : 'inherit';
+  if (!matchedRow) {
+    setTimeout(function() {
+      norows.style.display = 'block';
+    })
+  }
+  }
+
+// var tbl = document.getElementById('scrollingblock');
+// var norows = document.getElementById('no-rows-alert');
+// document.getElementById('search_button').addEventListener('click', function() {
+//   var matchedRow = false;
+//   var srch = $('#searchbar').val().toUpperCase();
+//   for(var r = 0; r < tbl.rows.length; r++) {
+//     var row = tbl.rows[r];
+//   var cell = row.cells[0];
+//     var cellVal = cell.textContent.substr(0, srch.length).toUpperCase();
+//     if (srch == cellVal) {
+//         matchedRow = true;
+//     row.style.display = 'scrollingblock';
+//     }
+//   else {
+//     row.style.display = 'none';
+//   }
+//   }
+  
+//   norows.style.display = matchedRow ? 'none' : 'inherit';
+//   if (!matchedRow) {
+//     setTimeout(function() {
+//       norows.style.display = 'none'
+//     }, 1500)
+//   }
+// });
+
+
+
+
+
+
 
 // function search() {
 //   var input = document.getElementById('srch').value;

@@ -376,10 +376,14 @@
         <div class="flex_container2_scroll" id="scrolling_3">
             <div class="scrolling_3">
                 <ul>
+                 <!-- onclick="arrows(1)"
+                    onclick="rightScroll()"
+                    onclick="leftScroll()"
+                 onclick="arrows(-1)" -->
                     <div  onclick="arrows(1)" class="mob_scroll" id="mob_scroll">
                         <img src="/assert/Group 36989.png">
                     </div>
-                    <div  onclick="arrows(-1)" class="mob_scroll_next"  id="mob_scroll_next">
+                    <div onclick="arrows(-1)" class="mob_scroll_next"  id="mob_scroll_next">
                         <img src="/assert/Group 36990.png">
                     </div>
                   
@@ -401,9 +405,6 @@
                     <a href="#" class="act_bar_1"  id="act_bar"><li>
                     <div >On Time <b>(7)</b></div></li>
                     </a>
-                    <a href="#" class="act_bar_1"  id="act_bar_id"><li>
-                    <div ></div></li>
-                    </a>
                 </ul>
             </div>
         </div>
@@ -415,22 +416,29 @@
             </span>
             <input onkeyup="empty()" id="srch" type="text" placeholder="Search by: Shipment ID, Origin, Destination,Product category,vendor">
              -->
-            <button class="search_button">
+            <button class="search_button" id="search_button">
                 <img src="/assert/Group 33795.png" alt="searching">
             </button>
-    
-            <input type="searchbox" class="search_box" id="searchbar" onkeyup="search_keys()" 
+    <!-- onkeyup="search_keys()" 
+    onkeyup="search_keys()" -->
+            <input type="searchbox" class="search_box" id="searchbar"  onkeyup="search_keys()"
                 placeholder="Search by: Shipment ID, Origin, Destination, Product category, Vendor"></input>
-                <!-- <input id="searchbar" onkeyup="search_animal()" type="text"
+         
+                       <!-- <input id="searchbar" onkeyup="search_animal()" type="text"
                 name="search" placeholder="Search by: Shipment ID, Origin, Destination, Product category, Vendor"> -->
-                
-        </div>
+               
+            </div>
     </div>
     <!--</div>-->
 
 
     <div class="container4">
-        <div class="scrollingblock">
+        <div class="alert alert-danger" id="no-rows-alert">
+            <img class="draw" src="assert/6c87c4_21245436d99044b79eadd0206020bf01_mv2 (1).png">
+            <p class="para_1">No results found!</p> 
+        <p class="para_2">Search anything related!!!</p>
+    </div> 
+        <div class="scrollingblock" id="scrollingblock">
 
             <div class="firstblock block" id="block">
 
@@ -511,7 +519,6 @@
 
         </div>
 
-
         <div class="secondblock block" id="block">
             
             <div class="first_flex_block">
@@ -590,6 +597,8 @@
         </div>
 
         </div>
+
+       
 
 
         <div class="thirdblock block" id="thirdblock" id="block">
@@ -757,12 +766,11 @@
             <img src="/assert/icon_Fire4.png" alt="im5">
             <img src="/assert/icon_Fire5.png" alt="im6">
         </div>
-
-
         </div>
 
-    </div>
-    </div>
+    </div>  
+
+</div>
  </div>
  <div class="aside_container">
  <aside>
