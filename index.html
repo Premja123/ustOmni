@@ -115,6 +115,15 @@
 
 <div class="parent_container">
     <div class="grid_scrolling">
+        <div class="carosel_prev" id="carosel_prev">
+            <div class="prev_scroll" id="prev_scroll"> <p><</p>
+            </div>
+           </div> 
+           <div class="carosel_next" id="carosel_next">
+            <div class="next_scroll" id="next_scroll">  
+                <p>></p>
+            </div>
+           </div> 
         <div class="container2">
             <div class="grid_box">
                  <div>
@@ -237,7 +246,7 @@
                  <div><img src="/assert/check-circle.png" alt="tick"></div> 
              </div>
  
-             <div class="grid_box_mobile">
+             <div class="grid_box_mobile"  id="grid_box_mobile">
                   <div>
                      <div class="exclamatory_icon">
                  <div>Pending approvals</div>
@@ -248,7 +257,7 @@
                  <div><img src="/assert/clock.png" alt="clocking"></div> 
              </div>
  
-             <div class="grid_box_mobile">
+             <div class="grid_box_mobile"  id="grid_box_mobile">
                  <div>
                  <div class="exclamatory_icon">
                  <div>Delivery in full</div>
@@ -260,7 +269,7 @@
                </div>
      
  
-             <div class="grid_box_mobile">
+             <div class="grid_box_mobile"  id="grid_box_mobile">
                  <div class="inside_grid_box">
                      <div class="exclamatory_icon">
                     <div><p class="last_grid_box_para">Inbound Freight as % of COGS</p></div> 
@@ -293,7 +302,7 @@
                 
           </div>
          
-          <div class="grid_box_mobile">
+          <div class="grid_box_mobile"  id="grid_box_mobile">
               <div>
              <div class="exclamatory_icon">
                  <div>On Time Delivery</div>
@@ -304,7 +313,7 @@
              <div><img src="/assert/box_img.png" alt="tick"></div> 
          </div>
          
-         <div class="grid_box_mobile">
+         <div class="grid_box_mobile"  id="grid_box_mobile">
               <div>
              <div class="exclamatory_icon">
                  <div>Cost/Pound/Mile</div>
@@ -421,7 +430,7 @@
             </button>
     <!-- onkeyup="search_keys()" 
     onkeyup="search_keys()" -->
-            <input type="searchbox" class="search_box" id="searchbar"  onkeyup="search_keys()"
+            <input type="searchbox" class="search_box" id="searchbar"  onchange="search_keys()"
                 placeholder="Search by: Shipment ID, Origin, Destination, Product category, Vendor"></input>
          
                        <!-- <input id="searchbar" onkeyup="search_animal()" type="text"

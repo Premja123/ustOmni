@@ -188,6 +188,46 @@ header {
   overflow-y: hidden;
 }*/
 
+
+.carosel_prev{
+  display:flex;
+  margin-top: 1.7rem;
+  left:0;
+ position: absolute;
+}
+.carosel_next{
+  display:flex;
+  margin-top: 1.7rem;
+  right:0;
+ position: absolute;
+}
+
+.next_scroll{
+  display: block;
+  cursor: pointer;
+   width: 17px;
+  height: 20px;
+  float: right;
+  color:white;
+  padding-left: 0.6rem;
+  padding-top: 0.2rem;
+  border-radius: 50%;
+  background-color: #36c8ea;
+}
+.prev_scroll{
+  display: block;
+  cursor: pointer;
+   width: 17px;
+  height: 20px;
+  float: right;
+  color:white;
+  padding-left: 0.6rem;
+  padding-top: 0.2rem;
+  border-radius: 50%;
+  background-color: #36c8ea;
+}
+
+
 .grid_scrolling{
     overflow-x: scroll;
     overflow-y: hidden;
@@ -204,7 +244,7 @@ header {
 .grid_box {
   display: flex;
   padding: 1rem;
-  width:332px;  
+  width:268px;  
   justify-content: space-between;
   background-color: white;
   text-decoration: bold;
@@ -579,11 +619,13 @@ header {
   display: flex;
   justify-content: space-between;
   color: red;
-  font-size: 0.875rem;
+  font-size: 0.725rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .linking {
-  padding-left: 10.5rem;
+  padding-left: 6rem;
 }
 .forthblock {
   display: flex;
@@ -981,8 +1023,6 @@ margin-left:15rem; */
 }
   .grid_box_mobile{
     display: block;
-    /* transform: translateX(100px);
-    transition: 5s; */
     display: flex;
     padding: 1rem;
     justify-content: space-between;
@@ -993,6 +1033,11 @@ margin-left:15rem; */
     height:3rem;
   }
   
+.grid_box_transition{
+  transform: translateX(-100%);
+  transition: transform 2s;
+}
+
   .inside_grid_box p{
     font-size: 0.825rem;
   }
@@ -1424,11 +1469,13 @@ position:absolute;
     color: #f62020;
     background-color: rgba(246, 32, 32, 0.1);
   }
-  .links {
+  .links p{
     display: flex;
     justify-content: space-between;
     color: red;
-    font-size: 0.875rem;
+    font-size: 0.725rem;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
   }
 
   .linking {
@@ -1503,6 +1550,12 @@ position:absolute;
 
 @media (min-width: 700px) and (max-width: 1200px) {
 
+.next_scroll{
+  display: none;
+}
+.prev_scroll{
+  display: none;
+}
   i{
     font-style: normal;
     border: none;
@@ -1890,7 +1943,7 @@ opacity: 0.5;
     height: 10rem;
     flex-wrap: wrap;
   }
-  .linkings {
+  .linkings{
     padding: 1rem 0.5rem;
     display: flex;
   }
@@ -2169,7 +2222,9 @@ opacity: 0.5;
     display: flex;
     justify-content: space-between;
     color: red;
-    font-size: 0.875rem;
+    font-size: 0.725rem;
+    margin-top:0.5rem;
+    margin-bottom:0.3rem;
   }
 
   .linking {
