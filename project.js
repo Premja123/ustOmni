@@ -50,46 +50,46 @@
 // }
 
 
-let slideIndex = 1;
-showSlides(slideIndex);
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
 
-var a=document.getElementById("grid_box_mobile");
-a.addEventListener("click",grid_animate); 
-function grid_animate(){
-  document.getElementsByClassName("grid_box_transition");
-}
+// var a=document.getElementById("grid_box_mobile");
+// a.addEventListener("click",grid_animate); 
+// function grid_animate(){
+//   document.getElementsByClassName("grid_box_transition");
+// }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("grid_box_mobile");
-  if (n > slides.length)
-   {slideIndex = 1}  
-  if (n < 1) {slideIndex = slides.length} 
-  if (n==1)
-  {
-   document.getElementById("carosel").style.display="none";
- }  else{
-  document.getElementById("carosel").style.display="block";
- } 
- if(n==6){
-  document.getElementById("carosel_1").style.display="none";
- }else{
-  document.getElementById("carosel_1").style.display="block";
- }
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("grid_box_mobile");
+//   if (n > slides.length)
+//    {slideIndex = 1}  
+//   if (n < 1) {slideIndex = slides.length} 
+//   if (n==1)
+//   {
+//    document.getElementById("carosel").style.display="none";
+//  }  else{
+//   document.getElementById("carosel").style.display="block";
+//  } 
+//  if(n==6){
+//   document.getElementById("carosel_1").style.display="none";
+//  }else{
+//   document.getElementById("carosel_1").style.display="block";
+//  }
   
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
-  }
-  slides[slideIndex-1].style.display = "flex";  
-}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none"; 
+//   }
+//   slides[slideIndex-1].style.display = "flex";  
+// }
 
 
 
@@ -98,25 +98,25 @@ function showSlides(n) {
 
 
 // function previous_carosel_1(){
-//   var leftside=document.getElementById('container2');
+//   var leftside=document.getElementById('grid_scrolling');
 //   leftside.scrollBy({
 //     top:0,
 //     left:-400,
 //     behavior: 'smooth'
 //   });
-//   document.getElementById("next_scroll").style.display="block";
-//   document.getElementById("prev_scroll").style.display="none";
+//   document.getElementById("prev_scroll").style.display="block";
+//    document.getElementById("next_scroll").style.display="none";
 // }
 
 // function next_carosel_1(){
-//   var rightside=document.getElementById('container2');
+//   var rightside=document.getElementById('grid_scrolling');
 //   rightside.scrollBy({
 //     top:0,
 //     left:400,
 //     behavior: 'smooth'
 //   });
 //   document.getElementById("prev_scroll").style.display="none";
-//   document.getElementById("carosel_prev").style.display="block";
+//   document.getElementById("next_scroll").style.display="block";
 // }
 
 
@@ -155,6 +155,78 @@ function showSlides(n) {
 //     });
 // }
 
+var c = 268;
+
+
+function prev() {
+    c -= 268;
+    if (c <=1000) {
+        document.getElementById("next_scroll").style.display = "flex";
+    }
+    if (c == 268) {
+        document.getElementById("prev_scroll").style.display = "none";
+    }
+    var left = document.getElementById("grid_scrolling");
+    left.scrollBy({
+        top: 0,
+        left: -268,
+        behavior: 'smooth'
+    });
+}
+
+function next() {
+    c += 268;
+    if (c >= 1000) {
+        document.getElementById("next_scroll").style.display = "none";
+    }
+    if (c > 268) {
+        document.getElementById("prev_scroll").style.display = "flex";
+    }
+    var right = document.getElementById("grid_scrolling");
+    right.scrollBy({
+        top: 0,
+        left: 268,
+        behavior: 'smooth'
+    });
+}
+
+
+
+
+var b = 370;
+
+
+function prev_mob() {
+    b -= 350;
+    if (b <=2100) {
+        document.getElementById("next_scroll_mob").style.display = "flex";
+    }
+    if (b < 400) {
+        document.getElementById("prev_scroll_mob").style.display = "none";
+    }
+    var leftmob = document.getElementById("grid_scrolling_mobile");
+    leftmob.scrollBy({
+        top: 0,
+        left: -350,
+        behavior: 'smooth'
+    });
+}
+
+function next_mobile() {
+    b += 350;
+    if (b >= 2100) {
+        document.getElementById("next_scroll_mob").style.display = "none";
+    }
+    if (b > 350) {
+        document.getElementById("prev_scroll_mob").style.display = "flex";
+    }
+    var rightmob = document.getElementById("grid_scrolling_mobile");
+    rightmob.scrollBy({
+        top: 0,
+        left: 350,
+        behavior: 'smooth'
+    });
+}
 
 
  // if(i>0){

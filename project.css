@@ -189,16 +189,10 @@ header {
 }*/
 
 
-.carosel_prev{
+
+/* .carosel_desktop{
   display:flex;
   margin-top: 1.7rem;
-  left:0;
- position: absolute;
-}
-.carosel_next{
-  display:flex;
-  margin-top: 1.7rem;
-  right:0;
  position: absolute;
 }
 
@@ -208,6 +202,7 @@ header {
    width: 17px;
   height: 20px;
   float: right;
+  right:0;
   color:white;
   padding-left: 0.6rem;
   padding-top: 0.2rem;
@@ -219,12 +214,49 @@ header {
   cursor: pointer;
    width: 17px;
   height: 20px;
-  float: right;
+  left:0;
   color:white;
   padding-left: 0.6rem;
   padding-top: 0.2rem;
   border-radius: 50%;
   background-color: #36c8ea;
+} */
+.prev_scroll{
+  display: none;
+}
+.prev_scroll{
+  position: absolute;
+  left:0px;
+  transform: translateY(20%);
+  background-color: #36c8ea;
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  margin-top: 1rem;
+
+}
+.prev_scroll img{
+  padding-right:0.2rem;
+  rotate: 180deg;
+  padding-bottom: 0.3rem;
+  width:20px;
+  height:20px;
+ }
+.next_scroll{
+  position: absolute;
+  right:0px;
+  transform: translateY(20%);
+  background-color: #36c8ea;
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+.next_scroll img{
+ padding-left: 0.5rem;
+ padding-top: 0.3rem;
+ width:20px;
+ height:20px;
 }
 
 
@@ -962,7 +994,7 @@ header {
 
 
 
-.carosel{
+/* .carosel{
   display:flex;
   margin-top: 1.7rem;
   left:0;
@@ -992,7 +1024,7 @@ header {
   float: right;
   border-radius: 50%;
   background-color: #36c8ea;
-}
+} */
 
 /* .prev{
   display: block;
@@ -1016,6 +1048,48 @@ margin-left:15rem; */
   /* border-radius: 0 3px 3px 0; */
   /* user-select: none;
 } */
+
+
+.prev_scroll_mob{
+  display: none;
+}
+
+
+.prev_scroll_mob{
+  position: absolute;
+  left:0px;
+  transform: translateY(20%);
+  background-color: #36c8ea;
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+
+}
+.prev_scroll_mob img{
+  padding-right:0.2rem;
+  rotate: 180deg;
+  padding-bottom: 0.3rem;
+  width:15px;
+  height:15px;
+ }
+.next_scroll_mob{
+  position: absolute;
+  right:0px;
+  transform: translateY(20%);
+  background-color: #36c8ea;
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+}
+.next_scroll_mob img{
+ padding-left: 0.5rem;
+ padding-top: 0.2rem;
+ width:15px;
+ height:15px;
+}
+
 .container2_mobile{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1027,7 +1101,7 @@ margin-left:15rem; */
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
-    width:320px;
+    width:310px;
     background-color: white;
     color: #666;
     height:3rem;
