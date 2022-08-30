@@ -229,6 +229,44 @@ function next_mobile() {
 }
 
 
+
+
+var d = 100;
+
+
+function arrows_prev() {
+    d -= 100;
+    if (d <=480) {
+        document.getElementById("mob_scroll").style.display = "flex";
+    }
+    if (d <120) {
+        document.getElementById("mob_scroll_prev").style.display = "none";
+    }
+    var leftside = document.getElementById("scrolling_3");
+    leftside.scrollBy({
+        top: 0,
+        left: -100,
+        behavior: 'smooth'
+    });
+}
+
+function arrows_next() {
+    d+= 100;
+    if (d >=401) {
+        document.getElementById("mob_scroll").style.display = "none";
+    }
+    if (d> 80) {
+        document.getElementById("mob_scroll_prev").style.display = "flex";
+    }
+    var rightside = document.getElementById("scrolling_3");
+    rightside.scrollBy({
+        top: 0,
+        left: 100,
+        behavior: 'smooth'
+    });
+}
+
+
  // if(i>0){
     //   document.getElementById("carosel").style.display="none";
     // }
@@ -376,31 +414,31 @@ hamburger.addEventListener("click", toggleMenu);
 
 
 
-function arrows(direction){
-  var container = document.getElementById('scrolling_3');
-  scrollCompleted = 0;
-  var slideVar = setInterval(function(){
-    if(direction==1){
-      document.getElementById("mob_scroll_next").style.display="block";
-    }
-      if(direction >= 1){
-          container.scrollLeft += 15;
+// function arrows(direction){
+//   var container = document.getElementById('scrolling_3');
+//   scrollCompleted = 0;
+//   var slideVar = setInterval(function(){
+//     if(direction==1){
+//       document.getElementById("mob_scroll_next").style.display="block";
+//     }
+//       if(direction >= 1){
+//           container.scrollLeft += 15;
 
-      } if(direction<0) {
-          container.scrollLeft -= 15;
-          document.getElementById("mob_scroll").style.display="block";
-          document.getElementById("mob_scroll_next").style.display="none";
-      }
-      if(direction==1){
-        document.getElementById("mob_scroll").style.display="none";
-      }
-      scrollCompleted += 2;
-      if(scrollCompleted >= 50)
-      {
-          window.clearInterval(slideVar);
-      }
-  }, 17);
-}
+//       } if(direction<0) {
+//           container.scrollLeft -= 15;
+//           document.getElementById("mob_scroll").style.display="block";
+//           document.getElementById("mob_scroll_next").style.display="none";
+//       }
+//       if(direction==1){
+//         document.getElementById("mob_scroll").style.display="none";
+//       }
+//       scrollCompleted += 2;
+//       if(scrollCompleted >= 50)
+//       {
+//           window.clearInterval(slideVar);
+//       }
+//   }, 17);
+// }
 
 
 // function arrows(direction){

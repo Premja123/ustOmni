@@ -965,7 +965,7 @@ header {
     margin:0.7rem 0.5rem 0rem 0.5rem;
     padding: 0%;
 }
-.prev_1 p{
+/* .prev_1 p{
   padding-left:0.4rem;
   color: white;
   padding-top: 0.1rem;
@@ -974,7 +974,7 @@ header {
   padding-left:0.3rem;
   color: white;
   padding-top: 0.1rem;
-}
+} */
 /* .carosel{
   display:flex;
   justify-content: flex-end;
@@ -1199,20 +1199,24 @@ margin-left:15rem; */
     border-radius: 50%;
     background-color: #36c8ea;
   } */
+
+
   .mob_scroll{
     display: block;
   }
-  .mob_scroll_next{
+  .mob_scroll_prev{
     display: none;
   }
 .mob_scroll{
-     /* display:flex; */
-     /* justify-content: flex-end; */
+  margin-top: 0.3rem;
    right:20px;
     position: absolute;
     } 
-.mob_scroll_next{
-left:20px;
+
+
+.mob_scroll_prev{
+  margin-top: 0.3rem;
+left:15px;
 position:absolute;
 }
 
@@ -1225,6 +1229,8 @@ position:absolute;
     margin: 0.2rem 0rem 0rem 0rem;
     flex-wrap: wrap;
   }
+
+  
   .linkings {
     padding: 0.5rem 0.3rem;
     display: flex;
@@ -1279,6 +1285,7 @@ position:absolute;
     overflow-x: scroll;
     overflow-y: hidden;
     margin: 0.2rem 1rem 0.2rem 0rem;
+    width:95%;
   }
 
   .flex_container2 {
@@ -1287,14 +1294,10 @@ position:absolute;
 
   .scrolling_3 {
     display: flex;
-    width: 60rem;
+    width:218%;
     margin-right: 10rem;
     flex-direction: row;
   }
- #act_bar_id{
-  background-color: white;
-  width: 0.3rem;
- }
 
   .flex_container2_scroll li {
     padding: 12px 15px;
