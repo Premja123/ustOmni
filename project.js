@@ -238,6 +238,7 @@ function arrows_prev() {
     d -= 100;
     if (d <=480) {
         document.getElementById("mob_scroll").style.display = "flex";
+        console.log(d);
     }
     if (d <120) {
         document.getElementById("mob_scroll_prev").style.display = "none";
@@ -254,6 +255,7 @@ function arrows_next() {
     d+= 100;
     if (d >=401) {
         document.getElementById("mob_scroll").style.display = "none";
+        console.log(d);
     }
     if (d> 80) {
         document.getElementById("mob_scroll_prev").style.display = "flex";
